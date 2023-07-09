@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.card-image {
+    height: 250px;
+}
+
+.card-rating {
+    display: flex;
+}

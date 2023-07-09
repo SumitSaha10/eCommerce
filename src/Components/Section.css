@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 0;
+    background-size: fixed;
+    background-repeat: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
