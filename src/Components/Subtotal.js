@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Subtotal.css'
 import CurrencyFormat from 'react-currency-format'
-import { useStateValue } from './StateProvider'
-import { getBasketTotal } from '../reducer'
+// import { useStateValue } from './StateProvider'
+// import { getBasketTotal } from '../reducer'
+import cartContext from '../context/cartContext'
 import { useNavigate } from 'react-router-dom'
 const Subtotal = () => {
-    const [{ basket }] = useStateValue();
+    // const [{ basket }] = useStateValue();
+    const context = useContext(cartContext)
+    const { cartItems, totalAmount } = context
     const navigate = useNavigate();
     return (
         <div className='subtotal'>
@@ -13,15 +16,13 @@ const Subtotal = () => {
                 renderText={(value) => (
                     <>
                         <p>
-                            Subtotal:{basket.length} items :<strong>{value}</strong>
+                            Subtotal:{cartItems.length} items :<strong>{value}</strong>
                         </p>
-                        <small className='subtotal__gift'>
-                            <input type='checkbox' />This order contain a gift
-                        </small>
+
                     </>
                 )}
                 decimalScale={2}
-                value={getBasketTotal(basket)}
+                value={totalAmount}
                 displayType='text'
                 thousandSeparator={true}
                 prefix='$'

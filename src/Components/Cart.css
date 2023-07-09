@@ -1,25 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-.cart-items{
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 2rem;
 }
 
-.cart-items header{
+.cart-items header {
     font-size: 1.7rem;
-   
+
 }
 
-.cart-items .cart-items-item{
-    
+.cart-items .cart-items-item {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,25 +36,62 @@
     margin-top: 2rem;
 }
 
-.cart-items .cart-items-item .cart-items-cell{
+.cart-items .cart-items-item .cart-items-cell {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    width: 320px;
     border-bottom: 2px solid black;
     margin-top: 0.5rem;
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
 }
 
-.cart-items .cart-items-item .cart-items-cell .item-name{
-    width: 30%;
-    
+.cart-items .cart-items-item .cart-items-cell p {
+    margin: 0;
 }
 
-.cart-items .cart-items-item .cart-items-cell img{
-    width: 50px;
-    height: 50px;
+.cart-items .cart-items-item .cart-items-cell .item-name {
+    font-size: 23px;
+    font-weight: bold;
+
 }
 
-.cart-items .cart-items-item .cart-items-cell .btn{
-    font-size: 1.4rem;
+.cart-items .cart-items-item .cart-items-cell img {
+    width: 200px;
+    height: 200px;
+}
+
+.cart-items .cart-items-item .cart-items-cell .btn {
+    font-size: 2rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0;
+}
+
+.cart-items .cart-items-item .cart-items-cell .btn-add-sub {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cart-items .cart-items-item .cart-items-cell .item-quantity {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.cart-items .cart-items-item .cart-items-cell .item-price {
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.cart-items .cart-items-item .cart-items-cell .item-total {
+    font-size: 17px;
+    font-weight: bold;
+
 }

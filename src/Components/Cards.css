@@ -14,3 +14,7 @@
 .card-rating {
     display: flex;
 }
+
+i {
+    color: white;
+}

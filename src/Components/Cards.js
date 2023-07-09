@@ -3,10 +3,17 @@ import './Cards.css'
 
 import products from '../product';
 import cartContext from '../context/cartContext';
+import { useNavigate } from 'react-router-dom';
+
 export default function Cards(props) {
   // const { handleAddProduct } = props;
+  const navigate = useNavigate()
   const context = useContext(cartContext)
   const { handleAddProduct } = context
+  const buyNow = (element) => {
+    navigate('/cart')
+    handleAddProduct(element)
+  }
   return (
     <div className='d-flex justify-content-center flex-wrap  my-5'>
       {
@@ -22,8 +29,8 @@ export default function Cards(props) {
                 })}
               </p>
               <div className='row'>
-                <button className="btn btn-primary">Buy Now</button>
-                <button className="btn btn-info my-2" onClick={() => handleAddProduct(element)}>Add to Cart</button>
+                <button className="btn btn-primary" onClick={() => buyNow(element)}>Buy Now</button>
+                <button className="btn btn-info my-2" onClick={() => handleAddProduct(element)}>Add to Cart <i className="fa-solid fa-cart-shopping"></i></button>
               </div>
             </div>
           </div>
