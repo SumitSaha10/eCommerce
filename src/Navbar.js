@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { useStateValue } from '../StateProvider'
-import cartContext from '../context/cartContext'
+import { useStateValue } from './StateProvider'
+import cartContext from './context/cartContext'
 export default function Navbar() {
   const [{ user }, dispatch] = useStateValue()
   const context = useContext(cartContext)

@@ -39,7 +39,7 @@ const RegisterUser = () => {
         <div className='login'>
             <i className="fa-solid fa-circle-user"></i>
             <div className='login__container'>
-                <h1>Sign In</h1>
+                <h1 className='text-2xl font-bold'>Sign Up</h1>
                 <form>
                     <h5>Name</h5>
                     <input type='text' value={name} onChange={event => setName(event.target.value)} />

@@ -40,7 +40,7 @@ const LogIn = () => {
         <div className='login'>
             <i class="fa-solid fa-circle-user"></i>
             <div className='login__container'>
-                <h1>Sign In</h1>
+                <h1 className='text-2xl font-bold'>Sign In</h1>
                 <form>
 
                     <h5>Email</h5>
@@ -51,7 +51,7 @@ const LogIn = () => {
 
                 </form>
                 <p>By continuing, you agree to ecommerce's Conditions of Use and Privacy Notice.</p>
-                <p>Don't have an account <Link to='/signup'>Create account</Link></p>
+                <p>Don't have an account <Link to='/signup' className='text-blue-500'>Create account</Link></p>
             </div>
         </div>
     )
