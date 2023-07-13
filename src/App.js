@@ -12,6 +12,7 @@ import RegisterUser from './Components/RegisterUser';
 import LogIn from './Components/Login';
 import { useStateValue } from './StateProvider'
 import CartState from './context/CartState';
+import ProductPage from './Components/ProductPage';
 function App() {
   const [{ user }, dispatch] = useStateValue()
 
@@ -43,6 +44,7 @@ function App() {
             <Route exact path='/contact' element={<Contact />}></Route>
             <Route exact path='/cart' element={<Cart />}></Route>
             <Route exact path='/signup' element={<RegisterUser />}></Route>
+            <Route exact path='/productpage' element={<ProductPage />}></Route>
           </Routes>
           <Footer />
         </Router>

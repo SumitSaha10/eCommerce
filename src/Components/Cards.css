@@ -1,14 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
     display: flex;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-image {
-    height: 250px;
+    height: 200px;
+    width: 200px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: rgb(8, 37, 202);
+
+}
+
+.card-description {
+    font-size: 0.8rem;
+}
+
+.card-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .card-rating {

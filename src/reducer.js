@@ -1,5 +1,6 @@
 export const initialState = {
-    user: null
+    user: null,
+    product: {}
 
 }
 
@@ -10,6 +11,12 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 user: action.user
+            }
+
+        case 'SET_PRODUCT':
+            return {
+                ...state,
+                product: action.product
             }
 
         // case 'FIND_USER':

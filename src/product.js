@@ -14,6 +14,7 @@ let products = [
     {
         id: 1,
         name: "Samsung Laptop",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 45300,
         img: image1,
         quantity: 1,
@@ -23,6 +24,7 @@ let products = [
     {
         id: 2,
         name: "HP Desktop",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 45000,
         img: image2,
         quantity: 1,
@@ -32,6 +34,7 @@ let products = [
     {
         id: 3,
         name: "Zebronics Desktop",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 12000,
         img: image3,
         quantity: 1,
@@ -41,6 +44,7 @@ let products = [
     {
         id: 4,
         name: "Samsung Fridge",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 18400,
         img: image4,
         quantity: 1,
@@ -49,6 +53,7 @@ let products = [
     {
         id: 5,
         name: "Whoolpool Fride",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 17000,
         img: image5,
         quantity: 1,
@@ -57,6 +62,7 @@ let products = [
     {
         id: 6,
         name: "LG Washing Fachine",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 15000,
         img: image6,
         quantity: 1,
@@ -65,6 +71,7 @@ let products = [
     {
         id: 7,
         name: "Sanse Washing Machine",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 15400,
         img: image7,
         quantity: 1,
@@ -73,6 +80,7 @@ let products = [
     {
         id: 8,
         name: "Samsung Microwave",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 12000,
         img: image8,
         quantity: 1,
@@ -81,6 +89,7 @@ let products = [
     {
         id: 9,
         name: "Voltas AC",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 25000,
         img: image9,
         quantity: 1,
@@ -89,6 +98,7 @@ let products = [
     {
         id: 10,
         name: "DELL Desktop",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 37000,
         img: image10,
         quantity: 1,
@@ -97,6 +107,7 @@ let products = [
     {
         id: 11,
         name: "DELL Laptop",
+        description: "Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn.",
         price: 67000,
         img: image11,
         quantity: 1,
